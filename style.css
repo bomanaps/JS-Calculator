@@ -1,81 +1,80 @@
- 
- ​body​ { 
- ​  ​font-family​:​ ​'Montserrat'​,​ sans-serif; 
- ​  ​background​:​ ​#​bba7b3​; 
- ​} 
- ​#​container​ { 
- ​  ​background-color​:​ ​#​bba7b3​; 
- ​  ​margin​:​ ​20​px​ auto; 
- ​} 
- ​#​calculator​ { 
- ​  ​width​:​ ​320​px​; 
- ​  ​height​:​ ​520​px​; 
- ​  ​margin​:​ ​0​ auto; 
- ​  ​top​:​ ​20​px​; 
- ​  ​position​:​ relative; 
- ​  ​border-radius​:​ ​19​px​; 
- ​  ​background​:​ ​#​ad9ba6​; 
- ​  ​box-shadow​:​  ​-50​px​ ​50​px​ ​58​px​ ​#​9f8f99​,​ ​50​px​ ​-50​px​ ​58​px​ ​#​bba7b3​; 
- ​} 
- ​#​result​ { 
- ​  ​height​:​ ​120​px​; 
- ​} 
- ​#​keyboard​ { 
- ​  ​height​:​ ​400​px​; 
- ​} 
- ​#​history​{ 
- ​  ​text-align​:​ right; 
- ​  ​height​:​ ​20​px​; 
- ​  ​margin​:​ ​0​ ​20​px​; 
- ​  ​padding-top​:​ ​20​px​; 
- ​  ​font-size​:​ ​15​px​; 
- ​  ​color​:​ ​#​334944​; 
- ​} 
- ​#​output​ { 
- ​  ​text-align​:​ right; 
- ​  ​height​:​ ​20​px​; 
- ​  ​margin​:​ ​10​px​ ​20​px​; 
- ​  ​font-size​:​ ​30​px​; 
- ​} 
- ​.​operator​,​ .​number​,​ .​empty​{ 
- ​        ​width​:​ ​50​px​; 
- ​        ​height​:​ ​50​px​; 
- ​        ​margin​:​ ​15​px​; 
- ​        ​float​:​ left; 
- ​        ​border-radius​:​ ​50​%​; 
- ​        ​border-width​:​ ​0​; 
- ​        ​font-weight​:​ bold; 
- ​        ​font-size​:​ ​15​px​; 
- ​} 
- ​.​number​,​ .​empty​{ 
- ​        ​background​:​ none; 
- ​} 
- ​.​number​,​ .​operator​{ 
- ​        ​cursor​:​ pointer; 
- ​} 
- ​.​operator​:​active​,​ .​number​:​active​{ 
- ​        ​font-size​:​ ​13​px​; 
- ​} 
- ​.​operator​:​focus​,​ .​number​:​focus​,​ .​empty​:​focus​{ 
- ​        ​outline​:​ ​0​; 
- ​} 
- ​button​:​nth-child​(​4​){ 
- ​        ​font-size​:​ ​20​px​; 
- ​        ​background-color​:​ ​#​20b2aa​; 
- ​} 
- ​button​:​nth-child​(​8​){ 
- ​        ​font-size​:​ ​20​px​; 
- ​        ​background-color​:​ ​#​ffa500​; 
- ​} 
- ​button​:​nth-child​(​12​){ 
- ​        ​font-size​:​ ​20​px​; 
- ​        ​background-color​:​ ​#​f08080​; 
- ​} 
- ​button​:​nth-child​(​16​){ 
- ​        ​font-size​:​ ​20​px​; 
- ​        ​background-color​:​ ​#​7d93e0​; 
- ​} 
- ​button​:​nth-child​(​20​){ 
- ​        ​font-size​:​ ​20​px​; 
- ​        ​background-color​:​ ​#​9477af​; 
- ​}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #bba7b3;
+}
+#container {
+  background-color: #bba7b3;
+  margin: 20px auto;
+}
+#calculator {
+  width: 320px;
+  height: 520px;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 19px;
+  background: #ad9ba6;
+  box-shadow:  -50px 50px 58px #9f8f99, 50px -50px 58px #bba7b3;
+}
+#result {
+  height: 120px;
+}
+#keyboard {
+  height: 400px;
+}
+#history{
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #334944;
+}
+#output {
+  text-align: right;
+  height: 20px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number, .empty{
+	background: none;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
